@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  transition: background-color 300ms ease;
+  background: {
+    position: center;
+    repeat: no-repeat;
+    color: var(--very-dark-blue);
+  }
+
+  &:hover {
+    background-color: var(--pale-blue);
+  }
+  &--icon-document {
+    background-image: url('../../images/icon-document.svg');
+  }
+  &--icon-folder {
+    background-image: url('../../images/icon-folder.svg');
+  }
+  &--icon-upload {
+    background-image: url('../../images/icon-upload.svg');
+  }
+}

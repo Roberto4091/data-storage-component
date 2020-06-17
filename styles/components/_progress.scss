@@ -1,0 +1,41 @@
+.progress {
+  &__bar {
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: var(--very-dark-blue);
+
+    &-indicator {
+      width: 45%;
+      height: 100%;
+      padding: 0.2rem;
+      border-radius: inherit;
+      background: var(--progress-gradient);
+      transition: width 300ms ease;
+      justify-content: flex-end;
+      align-items: center;
+      display: flex;
+
+      &::after {
+        content: '';
+        width: 1.2rem;
+        height: 1.2rem;
+        display: block;
+        border-radius: 100%;
+        background-color: var(--white);
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+
+    &-text {
+      font-size: 1.3rem;
+    }
+  }
+}

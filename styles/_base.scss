@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--pale-blue);
+  font-family: 'Raleway', sans-serif;
+  background: {
+    image: url('../images/bg-mobile.svg');
+    repeat: no-repeat;
+    size: cover;
+  }
+
+  @media (min-width: 1024px) {
+    background: {
+      image: url('../images/bg-desktop.svg');
+      color: var(--very-dark-blue);
+      position: bottom center;
+      repeat: no-repeat;
+      size: contain;
+    }
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1000px;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storage-container {
+  width: 100%;
+
+  .nav {
+    max-width: 33.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    .nav {
+      flex: 1 1 auto;
+      margin-bottom: 0;
+      margin-right: 2rem;
+      max-width: min-content;
+    }
+
+    .storage-box {
+      flex: 0 0 1;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .nav {
+      max-width: 33.5rem;
+    }
+  }
+}
