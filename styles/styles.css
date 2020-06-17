@@ -21,13 +21,13 @@
 }
 
 .progress__bar-indicator {
-  width: 45%;
+  width: 0%;
   height: 100%;
   padding: 0.2rem;
   border-radius: inherit;
   background: var(--progress-gradient);
-  -webkit-transition: width 300ms ease;
-  transition: width 300ms ease;
+  -webkit-transition: width 1.5s ease;
+  transition: width 1.5s ease;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;

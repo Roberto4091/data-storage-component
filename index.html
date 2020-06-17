@@ -18,23 +18,31 @@
             <img src="/images/logo.svg" alt="Fylo" class="nav__logo_img" />
           </div>
           <div class="nav__menu">
-            <button class="btn btn--icon-document"></button>
-            <button class="btn btn--icon-folder"></button>
-            <button class="btn btn--icon-upload"></button>
+            <button
+              data-storage-type="documents"
+              class="btn btn--icon-document"
+            ></button>
+            <button
+              data-storage-type="folders"
+              class="btn btn--icon-folder"
+            ></button>
+            <button
+              data-storage-type="uploads"
+              class="btn btn--icon-upload"
+            ></button>
           </div>
         </div>
 
         <div class="storage-box">
           <div class="storage-box__wrapper">
             <p class="storage-box__title">
-              You've used <strong>815 GB</strong> of your storage
+              You've used <strong>0 GB</strong> of your storage
             </p>
             <div class="progress">
               <div class="progress__bar">
                 <div
-                  data-value="400"
-                  data-max="1000"
                   class="progress__bar-indicator"
+                  data-storage-capacity="1000"
                 ></div>
               </div>
               <div class="progress__info">
@@ -46,7 +54,7 @@
           <div class="storage-box__box">
             <div class="storage-box__available">
               <p class="storage-box__available-number">
-                <strong>185</strong>
+                <strong>0</strong>
               </p>
               <p class="storage-box__available-text">gb left</p>
             </div>
@@ -54,5 +62,6 @@
         </div>
       </div>
     </main>
+    <script src="/js/main.js"></script>
   </body>
 </html>

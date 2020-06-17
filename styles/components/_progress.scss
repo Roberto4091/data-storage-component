@@ -8,12 +8,12 @@
     background-color: var(--very-dark-blue);
 
     &-indicator {
-      width: 45%;
+      width: 0%;
       height: 100%;
       padding: 0.2rem;
       border-radius: inherit;
       background: var(--progress-gradient);
-      transition: width 300ms ease;
+      transition: width 1.5s ease;
       justify-content: flex-end;
       align-items: center;
       display: flex;
